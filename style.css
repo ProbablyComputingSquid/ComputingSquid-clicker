@@ -1,0 +1,17 @@
+body {
+  background-color:blanchedalmond;
+  
+}
+
+
+button {
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer;
+  outline: none;
+}
+
+* {
+  font-family: 'Bubblegum Sans';
+
+}
