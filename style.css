@@ -11,7 +11,6 @@ button#play {
   display: block;
   margin: 7px auto -15px auto;
   outline: none;
-  padding: 5px 7px;
   transition: 0.4s;
 }
 
@@ -26,6 +25,7 @@ button {
   cursor: pointer;
   margin: 10px;
   outline: none;
+  padding: 5px 7px;
 }
 
 button:hover {

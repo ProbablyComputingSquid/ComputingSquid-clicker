@@ -45,13 +45,21 @@
     <p>Computers per click: <b id="cpc">1</b></p>
     <p>Computers per click: <b id="spc">1</b></p>
     <p>Squid Bills per click: <b id="sbpc">1</b></p>
+    <p>Squids per Second: <b id="spc">0</b></p>
+    <p>Computers per Second: <b id="cpc">0</b></p>
+    <p>Squid Bills per Second: <b id="sbpc">0</b></p>
+    <hr>
     <h1>Shop</h1>
     <h2>Upgrade clicks</h2>
 
     <div id="shop">
-      <button onclick="buySquid()"><h4>More Tentacles, Cost: 20 Squids<br>+1 Squid per Click</h4></button>
-      <button onclick="buyComputer()"><h4>Software Update, Cost: 20 Computers<br>+1 Computer per Click</h4></button>
-      <button onclick="buyComputer()"><h4>Salary Increase, Cost: 35 Squid Bills<br>+1 Computer per Click</h4></button>
+      <button onclick="buy1()"><h4>More Tentacles, Cost: <b id="buy1cost">20</b> Squids<br>+1 Squid per Click</h4></button>
+      <button onclick="buy2()"><h4>Software Update, Cost: <b id="buy2cost">20</b> Computers<br>+1 Computer per Click</h4></button>
+      <button onclick="buy3()"><h4>Salary Increase, Cost: <b id="buy3cost">35</b> Squid Bills<br>+1 Squid Bill per Click</h4></button>
+    </div>
+    <div id="shop">
+      <h2>Upgrade Per second</h2>
+      <button onclick="buy4()"><h4>Tiny Squid, Cost: <b id="buy4cost">20</b> ComputingSquid<br>+1 Squid per second</h4></button>
     </div>
   </body>
 </html>
