@@ -1,0 +1,57 @@
+<!--Computer Squid names and images ©2020 @ComputingSquid-->
+
+<!--Squid bill and transaction images ©2020 @JiyoonChang-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ComputingSquid Clicker</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    
+    <script src="script.js"></script>
+
+    
+    <h1>SQUID CLICKER</h1>
+    <hr>
+    <center>
+    <div id="description">
+      <h3>Click on the squid to increase your squids,<br> click on the computer to increase your computers,<br> and click on the squid dollar bill to increase your cash.</h3>
+      <h3>It takes 5 Squids and 5 Computers and 3 Squid Bills to make 4 ComputingSquids</h3>
+    </div>
+    </center>
+    
+    
+    <button onclick="addComputers()"><img src="imgs/Computer.png"><br>Computer</button>
+
+    <button onclick="addSquids()"><img src="imgs/Squid.png"><br>Squid</button>
+
+    <button onclick="getMoney()"><img src="imgs/Squid bill.png"><br>Squid bills</button>
+
+    <button onclick="createCS()"><img src="imgs/SquidExchange.png"><br>Exchange Money, Squids, and<br>Computers for ComputingSquids</button>
+
+
+    <p id="computers">Your Computers: 0</p>
+    <p id="squids">Your Squids: 0</p>
+    <p id="money">Your Squid Bills: 0</p>
+    <p id="CSs">Your Computing Squids: 0</p>
+    <p>ComputingSquids needed to win: <b id="CSsToWin">10000</b></p>
+    <hr id="short">
+    <h1>Stats</h1>
+    <p>Computers per click: <b id="cpc">1</b></p>
+    <p>Computers per click: <b id="spc">1</b></p>
+    <p>Squid Bills per click: <b id="sbpc">1</b></p>
+    <h1>Shop</h1>
+    <h2>Upgrade clicks</h2>
+
+    <div id="shop">
+      <button onclick="buySquid()"><h4>More Tentacles, Cost: 20 Squids<br>+1 Squid per Click</h4></button>
+      <button onclick="buyComputer()"><h4>Software Update, Cost: 20 Computers<br>+1 Computer per Click</h4></button>
+      <button onclick="buyComputer()"><h4>Salary Increase, Cost: 35 Squid Bills<br>+1 Computer per Click</h4></button>
+    </div>
+  </body>
+</html>
