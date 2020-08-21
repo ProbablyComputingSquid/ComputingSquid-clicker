@@ -3,6 +3,18 @@ function start() {
   window.location.href='play.html'
 }
 
+var csLeftToWin = 10000;
+var squids = 0;
+var squidsPerClick = 1;
+var computers = 0;
+var computersPerClick = 1;
+var money = 0;
+var moneyPerClick = 1;
+var computingSquids = 0;
+var computingSquidsPerClick = 0;
+
+
+
 function restart() {
   var csLeftToWin = 10000;
   var squids = 0;
@@ -14,6 +26,7 @@ function restart() {
   var computingSquids = 0;
   var computingSquidsPerClick = 0;
   start();
+
 }
 
 function update() {
@@ -27,9 +40,9 @@ function update() {
   document.getElementById("cpc").innerHTML = computersPerClick;
   document.getElementById("spc").innerHTML = squidsPerClick;
   document.getElementById("sbpc").innerHTML = squidBillsPerClick;
-  
 }
-//Get things per click
+
+//get things per click
 function addSquids() {
   squids += squidsPerClick;
   update();
@@ -43,6 +56,13 @@ function addComputers() {
 function getMoney() {
   money += moneyPerClick;
   update();
+}
+
+//if win
+function checkIfWin() {
+  if (csLeftToWin <= 0) {
+    window.location.href='win.html';
+  } 
 }
 
 //Transaction
