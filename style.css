@@ -1,43 +1,43 @@
 * {
-  font-family: 'Bubblegum Sans';
-  text-align: center;
+  font-family: 'Bubblegum Sans' !important;
+  text-align: center !important;
 }
 
 body {
-  background-color:blanchedalmond;
+  background-color:blanchedalmond !important;
 }
 
 hr {
   border: 1px solid #000000;
-  width:150px;
+  width:150px !important;
 }
 
 button {
-  background-color: #ff8000;
-  border: 2px solid #805000;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 10px;
-  outline: none;
-  padding: 5px 7px;
-  transition: 0.4s;
+  background-color: #ff8000 !important;
+  border: 2px solid #805000 !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+  margin: 10px !important;
+  outline: none !important;
+  padding: 5px 7px !important;
+  transition: 0.4s !important;
 }
 
 button#play, #description {
-  background-color: #50ffff;
-  border: 2px solid #00a080;
-  border-radius: 15px;
-  box-shadow: 0 4px #005040;
-  display: block;
-  margin: 7px auto -15px auto;
+  background-color: #50ffff !important;
+  border: 2px solid #00a080 !important;
+  border-radius: 15px !important;
+  box-shadow: 0 4px #005040 !important;
+  display: block !important;
+  margin: 7px auto -15px auto !important;
 }
 
 button:hover {
-  background-color: #ffa040;
+  background-color: #ffa040 !important;
 }
 
 button#play:hover {
-  background-color: #00b0b0;
-  border: 2px solid #008070;
-  box-shadow: 0 4px #004035
+  background-color: #00b0b0 !important;
+  border: 2px solid #008070 !important;
+  box-shadow: 0 4px #004035 !important;
 }

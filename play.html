@@ -10,8 +10,14 @@
     <title>ComputingSquid Clicker</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
   </head>
   <body>
+    <!--Bootstrap-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!--End bootstrap-->
     <script src="script.js"></script>
     <h1>Computing Squid Clicker!!</h1>
     <hr>
@@ -51,11 +57,15 @@
       <button onclick="buy(1)"><h4>More Tentacles, Cost: 20 Squids<br>+1 Squid per Click</h4></button>
       <button onclick="buy(2)"><h4>Software Update, Cost: 20 Computers<br>+1 Computer per Click</h4></button>
       <button onclick="buy(3)"><h4>Salary Increase, Cost: 35 Squid Bills<br>+1 Computer per Click</h4></button>
+      <button onclick="buy(4)"><h4>Ink, Cost: 60 Squids<br>+5 Squids per Click</h4>
     </div>
     <hr>
     <div id="shop2">
       <h3>Upgrade Per second</h3>
-      <button onclick="buy2(1)"><h4>Tiny Squid, Cost: 16 ComputingSquids<br>+1 Squid Per Second</h4></button>
+      <button onclick="buy2(A)"><h4>Tiny Squid, Cost: 24 ComputingSquids<br>+1 Squid Per Second</h4></button>
+     <button onclick="buy2(B)"><h4>Autoclicker, Cost: 24 ComputingSquids<br>+1 Computer Per Second</h4></button>
+     <button onclick="buy2(C)"><h4>Money Machine, Cost: 30 ComputingSquids<br>+1 Squid bill per second <span class="badge badge-pill badge-dark">Basic</span></h4></button>
+
     </div>
   </body>
 </html>
