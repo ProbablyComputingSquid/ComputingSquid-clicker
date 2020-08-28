@@ -1,4 +1,5 @@
 //vars
+var started = false;
 var csLeftToWin = 1000;
 var squids = 0;
 var spc = 1;
@@ -31,21 +32,35 @@ function restart() {
 }
 //local storage
 if(typeof(Storage) !== "undefined") {
+  if(started === "false") {
   var saveData = {"squids" : squids, "computers" : computers, "money" : money, "computingSquids" : computingSquids, "spc" : spc, "cpc" : cpc, "sbpc" : sbpc, "sps" : sps, "cps" : cps, "sbps" : sbps, "csLeftToWin" : csLeftToWin};
   for (i = 0; i <= Object.keys(saveData).length, i++) {
     localStorage.setItem( , 0);
   }
-  localStorage.setItem("squids" , 0);
-  localStorage.setItem("spc" , "1");
-  localStorage.setItem("sps" , "1")
-  localStorage.setItem("computers" , "0");
-  localStorage.setItem("cpc" , "1");
-  localStorage.setItem("cps" , "0");
-  localStorage.setItem("money" , "0");
-  localStorage.setItem("sbpc" , "1");
-  localStorage.setItem("sbps" , "0");
-  localStorage.setItem("computingSquids" , "0")
-  localStorage.setItem("csLeftToWin" , "1000")
+   localStorage.setItem("squids" , 0);
+   localStorage.setItem("spc" , "1");
+   localStorage.setItem("sps" , "1")
+   localStorage.setItem("computers" , "0");
+   localStorage.setItem("cpc" , "1");
+   localStorage.setItem("cps" , "0");
+   localStorage.setItem("money" , "0");
+   localStorage.setItem("sbpc" , "1");
+   localStorage.setItem("sbps" , "0");
+   localStorage.setItem("computingSquids" , "0");
+   localStorage.setItem("csLeftToWin" , "1000");
+   started = true;
+  } else if(started ==="true") {
+    localStorage.setItem("squids" , squids);
+    localStorage.setItem("spc" , spc);
+    localStorage.setItem("sps" , sps);
+    localStorage.setItem("computer" , computers);
+    localStorage.setItem("cpc" , cpc);
+    localStorage.setItem("cps" , cps);
+    localStorage.setItem("money" , money);
+    localStorage.setItem("sbpc" , sbpc);
+    localStorage.setItem("sbps" , sbps);
+    localStorage.setItem("computingSquids" , computingSquids);
+    localStorage.setItem("csLeftToWin", csLeftToWin);
 } else {
   alert("Local storage is unavaliabe. Please enable it, update your browser, or use a different browser like firefox. If you're already using firefox but older, then update it. LOL");
   alert("do not try to play the game. it will mess it up.");
